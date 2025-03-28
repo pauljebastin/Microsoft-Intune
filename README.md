@@ -5,7 +5,7 @@ Welcome to the Microsoft Intune Repository! This repository contains a collectio
 ## Features
 
 * **Device Enrollment & Management** – Automate and manage device enrollment, compliance policies, and configuration profiles.
-* Application Deployment – Deploy, update, and remove apps using Intune.
+* **Application Deployment** – Deploy, update, and remove apps using Intune.
 * **Security & Compliance** – Enforce security baselines, BitLocker policies, and Defender settings.
 * **Reporting & Monitoring** – Generate reports on device compliance, app installations, and security baselines.
 * **Troubleshooting & Remediation** – Automate issue resolution and Intune client health checks.
