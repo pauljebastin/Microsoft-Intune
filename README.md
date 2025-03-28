@@ -34,7 +34,7 @@ Execute the Desired Script
 
 ## Available Scripts
 
-# Device Management
+### Device Management
 
 * EnrollDevices – Automates device enrollment in Intune.
 * WipeDevice – Initiates a remote device wipe via Intune.
@@ -44,13 +44,13 @@ Execute the Desired Script
 * RemoveCompanyPortal – Uninstalls the Company Portal app from devices.
 * UpdateAppAssignments – Updates app assignments and deployment groups.
 
-Security & Compliance
+### Security & Compliance
 
 * ApplyBitLockerPolicy – Configures and enforces BitLocker encryption.
 * SetDefenderPolicies – Configures Microsoft Defender settings for Intune-managed devices.
 * ComplianceCheck – Reports on device compliance based on Intune policies.
 
-Reporting & Monitoring
+### Reporting & Monitoring
 
 * GenerateComplianceReport – Exports a report on device compliance.
 * IntuneAppInventory – Retrieves installed applications from managed devices.
