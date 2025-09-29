@@ -1,0 +1,23 @@
+## Get TLS 1.0 Reg Values
+$TLS10Client = Get-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Client' -Name Enabled
+$TLS10Server = Get-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Server' -Name Enabled
+
+## Check if TLS 1.0 Enabled
+if($TLS10Client.Enabled -eq 0 -and $TLS10Server.Enabled -eq 0){
+    $booDisabled =$True
+}else{
+    $booDisabled =$False
+}
+
+## Build the JSON table
+if ($booDisabled) {
+    $booDisabled
+    $disabledStatus = @{"TLS10Status" = "Disabled"}
+} 
+else {
+    $booDisabled
+    $disabledStatus = @{"TLS10Status" = "Enabled"}
+}
+
+## return
+return $disabledStatus | ConvertTo-Json -Compress
